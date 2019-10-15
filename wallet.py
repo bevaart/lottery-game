@@ -1,7 +1,7 @@
 class Wallet:
 
     # class attribute
-    tickets = 0
+    tegoed = 0
 
     # instance attribute
     def __init__(self, start_tegoed):
@@ -12,4 +12,4 @@ player1 = Wallet(50)
 
 
 # access the class attributes
-print("player1 has a balance {}".format(blu.__class__.tegoed))
+print("player1 has a balance of {}".format(player1.__class__.tegoed))
