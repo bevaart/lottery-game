@@ -8,7 +8,7 @@ class Wallet:
         self.tegoed = start_tegoed
 
 # instantiate the Parrot class
-player1 = Wallet(50)
+player1 = Wallet(60)
 
 
 # access the class attributes
