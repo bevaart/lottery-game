@@ -1,19 +1,28 @@
-class Wallet:
+# deze functies draaien een loterij
 
-    # class attribute
-    tickets = 0
+# inputs :
+#   welke loten heeft de speler gekocht
 
-    # instance attribute
-    def __init__(self, start_tegoed):
-        self.tegoed = start_tegoed
-    def betalen(self, bedrag):
-        self.tegoed -= bedrag
+# outputs :
+#   update van de loterij geschiedenis
+#   update van de speler z'n wallet met de winst uit de loterij
+#
+# we gaan een loterij doen met ballen! we trekken 3 ballen uit een bak met 12 :-)
+#
 
-# instantiate the Parrot class
-player1 = Wallet(60)
+def run_lottery():
+    # import modules
+    import random
 
+    # eerst maken we een lijst van alle mogelijke lotto getallen
+    lotto = range(1,31)
 
-# access the class attributes
-print("player1 has a balance of {}" . format(player1.tegoed))
-player1.betalen(100)
-print("player1 heeft 10 betaald en nu een balance of {}" . format(player1.tegoed))
+    print("Hello from the lottery! Let's pull some numbers!")
+    print "all our lotto numbers are : ", lotto
+
+    for x in range(0, 3):
+        # random 1 getal trekken
+        result = random.choice(lotto)
+        # dat getal uit de lijst halen, je kunt niet 2x hetzelfde getal pakken
+        lotto.remove(result)
+        print "our ", x+1, "'th lotto number is : ", result
