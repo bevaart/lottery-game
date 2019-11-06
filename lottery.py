@@ -25,4 +25,4 @@ def run_lottery():
         result = random.choice(lotto)
         # dat getal uit de lijst halen, je kunt niet 2x hetzelfde getal pakken
         lotto.remove(result)
-        print "our ", x+1, "'th lotto number is : ", result
+        print "lotto number", x+1, "is : ", result
