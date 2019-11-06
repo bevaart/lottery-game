@@ -7,7 +7,7 @@
 #   update van de loterij geschiedenis
 #   update van de speler z'n wallet met de winst uit de loterij
 #
-# we gaan een loterij doen met ballen! we trekken 3 ballen uit een bak met 12 :-)
+# we gaan een loterij doen met ballen! we trekken 3 ballen uit een bak met ? :-)
 #
 
 def run_lottery():
