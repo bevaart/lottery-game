@@ -7,6 +7,7 @@
 # import de andere bestanden/definities
 from wallet import *
 from lottery import *
+from gui import *
 
 # global variables
 lottery_count = 0;
