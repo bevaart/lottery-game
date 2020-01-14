@@ -20,7 +20,7 @@ def run_lottery():
     print("Hello from the lottery! Let's pull some numbers!")
     print "all our lotto numbers are : ", lotto
 
-    for x in range(0, 3):
+    for x in range(0, 5):
         # random 1 getal trekken
         result = random.choice(lotto)
         # dat getal uit de lijst halen, je kunt niet 2x hetzelfde getal pakken
